@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -14,11 +15,9 @@ const nextConfig = {
 eslint:{
     ignoreDuringBuilds: true,
 },
-transpilePackages: ['swiper'],
 output: 'export',
-basePath: '/nayon117.github.io',
-trailingSlash: true,
-
+assetPrefix: '/',
+basePath: '/',
 };
 
 export default nextConfig;
