@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "lint": "next lint",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "deploy": "next build && next export && touch out/.nojekyll"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
